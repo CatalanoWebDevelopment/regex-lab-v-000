@@ -10,6 +10,7 @@ def words_starting_with_un_and_ending_with_ing(text)
   array = text.split
   array.collect do |word|
     word.match(/\Aun.+ing/)
+    binding.pry
   end
 end
 
