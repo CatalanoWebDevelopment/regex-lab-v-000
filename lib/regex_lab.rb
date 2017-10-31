@@ -8,10 +8,13 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   array = text.split
-  array.collect do |word|
-    word.match(/\Aun.+ing/)
-    binding.pry
+  empty = []
+  array.each do |word|
+    if word.match(/\Aun.+ing/)
+      empty << word
+    end    
   end
+  empty
 end
 
 def words_five_letters_long(text)
