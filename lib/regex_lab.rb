@@ -12,7 +12,7 @@ def words_starting_with_un_and_ending_with_ing(text)
   array.each do |word|
     if word.match(/\Aun.+ing/)
       empty << word
-    end    
+    end
   end
   empty
 end
